@@ -31,7 +31,6 @@ a, a:visited,a:hover{
   opacity: 0;
   animation: fadeIn 2s forwards;
   animation-play-state: paused;
-  pointer-events: none;
 }
 
 h3:hover{
@@ -134,5 +133,43 @@ iframe{
   }
   to{
     opacity:0.7;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+
+  .left{
+    min-width: 20%;
+    min-height:10vh;
+    background-image: none;
+  
+    display: flex;
+  
+    align-items: center;
+  }
+  
+  
+  .right{
+    min-width: 20%;
+    min-height:10vh;
+    background-image: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .bottom{
+    background-image: url(../images/shortbottom.png);
+    background-repeat: no-repeat;
+    background-size: cover;   
+  }
+
+  h3{
+    font-size: 0.9em;
+  }
+
+  iframe{
+    min-width:90vh;
+    min-height:40vh;
   }
 }
