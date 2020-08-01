@@ -7,6 +7,7 @@ left_text.onclick = function(){
 
   content.style.webkitAnimationPlayState = "running";
   dark_bg.style.webkitAnimationPlayState = "running";
+  content.style.pointerEvents = "auto";
   video_bg.pause();
 
 }
